@@ -79,7 +79,7 @@ class UserProfileBasic(AbstractBaseUser, PermissionsMixin):
     objects = UserProfileManager()
 
     # 该字段指定用户的用户名字段
-    USERNAME_FIELD = u'username'
+    USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
     class Meta:
