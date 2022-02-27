@@ -15,13 +15,12 @@ class UserProfileManager(BaseUserManager):
         Creates and saves a User with the given username, email and password.
         """
         now = datetime.now()
-        user = self.model(email=email,
+        user = self.model(email=email, username=email,
                           is_staff=is_staff, status=1,
                           is_superuser=is_superuser,
                           create_time=now, **extra_fields)
 
         user.set_password(password)
-        user.save()
 
         # 更新uid
         user.uid = '%08d' % (10000000 + user.id)
