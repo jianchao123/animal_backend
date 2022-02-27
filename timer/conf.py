@@ -6,13 +6,13 @@ if env_dist.get('SHOPPING_ENV') == "DEV":
     mysql_passwd = "qv8KnAwraUnla10e"
     url = ""
 if env_dist.get('SHOPPING_ENV') == "TEST":
-    log_path = "data/log/shopping/timer.log"
+    log_path = "data/logs/shopping/timer.log"
     mysql_passwd = "qv8KnAwraUnla10e"
     url = "http://animal.xhty.site/"
 if env_dist.get('SHOPPING_ENV') == "PRO":
-    log_path = "data/log/shopping/timer.log"
+    log_path = "data/logs/shopping/timer.log"
     mysql_passwd = "qv8KnAwraUnla10e"
-    url = "https://shalilai.cn/"
+    url = "http://139.196.113.98/"
 
 redis_conf = dict(host="127.0.0.1", port=6379, db=0, decode_responses=True)
 mysql_conf = dict(host="127.0.0.1",

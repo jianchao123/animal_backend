@@ -30,8 +30,8 @@ if env_dist.get('SHOPPING_ENV') == "TEST":
     DEBUG = False
     ALLOWED_HOSTS = ['*']
     # 日志
-    django_info_log = '/data/log/shopping/info.log'
-    django_error_log = '/data/log/shopping/error.log'
+    django_info_log = '/data/logs/shopping/info.log'
+    django_error_log = '/data/logs/shopping/error.log'
     # redis
     REDIS_HOST = "127.0.0.1"
     REDIS_PORT = 6379
@@ -73,8 +73,8 @@ if env_dist.get('SHOPPING_ENV') == "PRO":
     DEBUG = False
     ALLOWED_HOSTS = ['*']
     # 日志
-    django_info_log = '/data/log/shopping/info.log'
-    django_error_log = '/data/log/shopping/error.log'
+    django_info_log = '/data/logs/shopping/info.log'
+    django_error_log = '/data/logs/shopping/error.log'
     # redis
     REDIS_HOST = "127.0.0.1"
     REDIS_PORT = 6379
@@ -104,7 +104,7 @@ if env_dist.get('SHOPPING_ENV') == "PRO":
     # QINIU_BUCKET_DOMAIN = 'pgstw1k4p.bkt.clouddn.com'
     # IMAGE_PATH = 'http://' + QINIU_BUCKET_DOMAIN + 'image'
     # 图片域名
-    STATIC_DOMAIN = "http://image-pro.shalilai.cn/"
+    STATIC_DOMAIN = "http://r7ygktdfd.hb-bkt.clouddn.com/"
 
     # admin静态文件url的路径
     STATIC_URL = '/static/djadmin-page/'
