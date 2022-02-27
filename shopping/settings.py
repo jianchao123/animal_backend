@@ -110,7 +110,7 @@ if env_dist.get('SHOPPING_ENV') == "PRO":
     STATIC_URL = '/static/djadmin-page/'
 
     # collectstatic 收集admin页面所用
-    STATIC_ROOT = '/data/static/djadmin-page/'
+    STATIC_ROOT = '/data/www/django/static/djadmin-page/'
 
 djcelery.setup_loader()
 
