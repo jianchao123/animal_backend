@@ -21,6 +21,7 @@ class UserProfileManager(BaseUserManager):
                           create_time=now, **extra_fields)
 
         user.set_password(password)
+        user.save()
 
         # 更新uid
         user.uid = '%08d' % (10000000 + user.id)
