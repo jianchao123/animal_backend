@@ -1,3 +1,6 @@
+# 初始化
+
+## 如何启动
 ### celery
 #### 启动celery
 celery -A shopping worker -l info
@@ -12,3 +15,9 @@ celery worker -Q statistics_platform_data --loglevel=info
 
 #### uwsgi 报错unavailable modifier requested: 0
 > apt-get install uwsgi-plugin-python
+
+
+## django-admin添加管理员
+
+### 
+> 1.使用createsuperuser创建一个管理员。进入admin后台之后，在管理员页面添加‘管理员’帐号，密码需要用django shell生成

@@ -378,7 +378,8 @@ class CommodityList(generics.ListCreateAPIView):
         try:
             commodity_type = CommodityType.objects.get(pk=commodity_type)
             buy_channel = BuyChannel.objects.get(pk=buy_channel)
-            card_inventory = CardInventories.objects.get(pk=card_inventory)
+            if card_inventory:
+                card_inventory = CardInventories.objects.get(pk=card_inventory)
         except (ObjectDoesNotExist,):
             raise AppError(*code_set.GlobalErrorCode.BUSINESS_ERROR)
 
